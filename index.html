@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="client.js"></script>
+    </head>
+    <body>
+        <div id = "screen-wrapper">
+            <div id = "banner">
+                    <button id="menu-btn"> 
+                        <div class="burger" onclick="animateMenu(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </button> 
+                    <h2 id="banner-text">Available Requests</h2>
+            </div>
+            <div class = login>
+                    <div id = "login-wrapper">
+                        <h2 id="login-title">UBC Food Buddies</h2>
+                        <div id="login-with">Login with</div>
+                        <button class = "blue-button" id="cwl-btn"> CWL</button>
+                    </div>
+            </div>
+            <div class = cwl-login>
+                    <div id = "login-cwl-wrapper">
+                        <h2 id="cwl-title">CWL Login</h2>
+                        <div class = "user-pass">Username</div>
+                        <div class = "user-pass-box"></div>
+                        <div class = "user-pass">Password</div>
+                        <div class = "user-pass-box"></div>
+                        <button class = "blue-button" id="login-btn"> Login</button>
+                    </div>
+            </div>
+            <div class = menu>
+                    <div id = "menu-wrapper">
+                        <div class = "menu-box" id="menu-title"> Menu </div><hr/>
+                        <div class = "menu-box"> 
+                            <img src="images/profile.png" id="profile-pic">
+                            John Smith </div><hr/>
+                        <div class = "menu-box"> Dashboard </div><hr/>
+                        <div class = "menu-box"> My Requests </div><hr/>
+                        <div class = "menu-box"> My Deliveries </div><hr/>
+                        <div class = "menu-box"> Logout </div><hr/>
+                    </div>
+            </div>
+            <div class = "screen">
+                    <div id = "dashboard-wrapper">
+                        <div class = "dashboard-box"> 
+                            <img src="images/mcdonalds.jpg" id="restuarant-pic"><hr/>
+                            McDonalds 
+                        </div>
+                        <div class = "dashboard-box"> 
+                            <img src="images/tim-hortons.jpg" id="restuarant-pic"><hr/>
+                            Tim Hortons 
+                        </div>
+                        <div class = "dashboard-box"> 
+                            <img src="images/mercante.jpg" id="restuarant-pic"><hr/>
+                            Mercante </div>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>
