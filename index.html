@@ -14,7 +14,7 @@
                             <div class="bar3"></div>
                         </div>
                     </button> 
-                    <h2 id="banner-text">Available Requests</h2>
+                    <h2 id="banner-text"></h2>
             </div>
             <div class = login>
                     <div id = "login-wrapper">
@@ -27,38 +27,296 @@
                     <div id = "login-cwl-wrapper">
                         <h2 id="cwl-title">CWL Login</h2>
                         <div class = "user-pass">Username</div>
-                        <div class = "user-pass-box"></div>
+                        <input type="text" class = "user-pass-box" value="JohnSmith">
                         <div class = "user-pass">Password</div>
-                        <div class = "user-pass-box"></div>
+                        <input type="text" class = "user-pass-box" value="*******"><br>
                         <button class = "blue-button" id="login-btn"> Login</button>
                     </div>
             </div>
             <div class = menu>
                     <div id = "menu-wrapper">
-                        <div class = "menu-box" id="menu-title"> Menu </div><hr/>
-                        <div class = "menu-box"> 
-                            <img src="images/profile.png" id="profile-pic">
-                            John Smith </div><hr/>
-                        <div class = "menu-box"> Dashboard </div><hr/>
-                        <div class = "menu-box"> My Requests </div><hr/>
-                        <div class = "menu-box"> My Deliveries </div><hr/>
+                        <div class = "menu-box" id="profile"> 
+                            <div id="profile-name">John Smith</div> 
+                            <img src="images/profile.png" id="profile-pic"><n/>
+                            <img src="images/stars.png" id="profile-stars">
+                            <div id="profile-num-reviews"> (30) </div>
+                            <div id="account-credit"> Credit: $14.25</div>
+                        </div><hr/>
+                        <div class = "menu-box" id="menu-dashboard"> Dashboard </div><hr/>
+                        <div class = "menu-box" id="menu-add-credit"> Add Credit </div><hr/>
+                        <div class = "menu-box" id="menu-requests"> My Created Requests </div><hr/>
+                        <div class = "menu-box" id="menu-deliveries"> My Accepted Deliveries </div><hr/>
                         <div class = "menu-box"> Logout </div><hr/>
                     </div>
             </div>
             <div class = "screen">
                     <div id = "dashboard-wrapper">
-                        <div class = "dashboard-box"> 
+                        <div class = "search-bar">
+                            <div>Search Restaurants...  </div> 
+                            <img src="images/search.png" id="search-pic">
+                        </div>
+                        <div class = "dashboard-box" id="mcdonalds-request"> 
                             <img src="images/mcdonalds.jpg" id="restuarant-pic"><hr/>
                             McDonalds 
                         </div>
-                        <div class = "dashboard-box"> 
+                        <div class = "dashboard-box" id="timhortons-request"> 
                             <img src="images/tim-hortons.jpg" id="restuarant-pic"><hr/>
                             Tim Hortons 
                         </div>
-                        <div class = "dashboard-box"> 
+                        <div class = "dashboard-box" id = "cut-off"> 
                             <img src="images/mercante.jpg" id="restuarant-pic"><hr/>
-                            Mercante </div>
+                        </div>
                     </div>
+            </div>
+            <div class = "screen">
+                    <div id = "delivery-request-wrapper">
+                        <button class = "blue-button" id="X-delivery-btn"> X </button>
+                        <div class ="delivery-request-label">Time Posted: 12:30 PM</div>
+                        <div class ="delivery-request-label">Restaurant: McDonalds</div>
+                        <div class ="delivery-request-label">Order: - Big Mac</div><n/>
+                        <div class ="delivery-request-label" id = "tab-div">- Large coke </div>
+                        <div class ="delivery-request-label">Deliver To: MacLeod 431</div>
+                        <img src="images/mcdonalds-map.png" id="map-pic">
+                        <div class="requester-profile">
+                            <div class ="delivery-request-label" id = "requester-name">Requester: Emma Johnson</div>
+                            <img src="images/profile.png" id="profile-pic2">
+                        </div>
+                        <div class ="requester-rating">
+                            <img src="images/stars.png" id="stars-pic">
+                            <div id="num-reviews"> (10 reviews) </div>
+                        </div>
+                        <button class = "blue-button" id="accept-request-btn"> Accept</button>
+                    </div>
+            </div>
+            <div class = "screen">
+                <div id = "new-request-wrapper">
+                    <div id = "restaurant">
+                        <div class ="new-request-label" id="restaurant-label">Restaurant:</div>
+                        <div id = "restaurant-box">
+                            <div>Enter Restaurant Name... </div>
+                            <img src="images/search.png" id="search-pic">
+                        </div>
+                    </div>
+                    <div id="order">
+                        <div class ="new-request-label" id = "order-label">Order:</div>
+                        <div id = "order-box"> 
+                            <div>Enter Menu Item</div>
+                        </div>
+                        <button class="circle-button" id="add-item">+</button>
+                    </div>
+                    <div id="location">
+                        <div class ="new-request-label" id="location-label">Location:</div>
+                        <div id = "location-box">
+                            <div>Tap to select a location</div>
+                            <img src="images/location.png" id="location-pic">
+                        </div>
+                    </div>
+                    <div id="cost">
+                        <div class ="new-request-label" id="cost-label">Maximum Cost: $</div>
+                        <input type="number" id = "cost-box">
+                    </div>
+                    <div id="incentive">
+                        <div class ="new-request-label" id="incentive-label">Incentive: </div>
+                        <button class="blue-button" id="add-dollar">+</button>
+                        <div id="dollar-symbol"> $ </div>
+                        <div id="incentive-cost">2.00</div>
+                        <button class="blue-button" id="sub-dollar">-</button>
+                    </div>
+                    <div id="notes">
+                        <div class ="new-request-label" id="notes-label">Notes: </div>
+                        <input type="text" id = "notes-box">
+                    </div>
+                    <div id = "create-cancel">
+                        <button class = "blue-button" id="cancel-request-btn"> Cancel</button>
+                        <button class = "blue-button" id="create-request-btn"> Create</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class = "screen">
+                <div id = "delivery-response-wrapper">
+                    <div id="blackscreen"> </div>
+                </div>
+            </div> -->
+            <div class = "screen">
+                <div id = "add-credit-wrapper">
+                    <div class ="delivery-request-label">Current Credit: $14.25 </div>
+                    <div class ="delivery-request-label">Amount to add: </div>
+                    <div class = "set-box-btns">
+                        <button class = "blue-button" > $5 </button>
+                        <button class = "blue-button" > $10 </button>
+                        <button class = "blue-button" > $15 </button>
+                        <button class = "blue-button" > $20 </button>
+                        <button class = "blue-button" > $50 </button>
+                    </div>
+                    <div class = "custom-amount">
+                        <div class ="delivery-request-label" id="custom-amount-label">Add custom amount: $</div>
+                        <input type="number" id = "custom-amount-box">
+                    </div>
+                    <div class ="delivery-request-label" id="enter-payment-info-label">Enter Payment Information: </div><n/>
+                    <div class = "cardholder-name">
+                        <div class ="delivery-request-label" id="cardholder-name-label">Cardholder Name: </div><n/>
+                        <input type="text"  id="cardholder-name-box">
+                    </div>
+                    <div class = "card-number">
+                        <div class ="delivery-request-label" id="card-number-label">Card Number:  </div><n/>
+                        <input type="number" id="card-number-box">
+                    </div>
+                    <div class ="delivery-request-label" id="card-number-label">Expiry Date:  </div><n/>
+                    <div class = "expiry-date">
+                        <input type="number" class="ex-date-box" id="mm">
+                        <div class="slash-symbol"> / </div>
+                        <input type="number" class="ex-date-box" id="yy">
+                        <input type="number" class="ex-date-box" id="ccv">
+                    </div>
+                    <div class="expiry-labels">
+                        <div id="mm-label"> MM </div>
+                        <div id="yy-label"> YY </div>
+                        <div id="ccv-label"> CCV </div>
+                    </div><n/>
+                    <button class = "blue-button" id="add-payment-info-btn"> Add </button>
+                </div>
+            </div>
+            <div class = "screen">
+                <div id = "created-requests-wrapper">
+                    <div class = delivery-request-label id="current-requests-label">Current Requests</div>
+                    <div class = "dashboard-box" id="current-request"> 
+                        <div>Request for McDonalds</div><n/>
+                        <div>Delivery Location: MacLeod 431</div><n/>
+                        <div>Incentive $4.00</div><n/>
+                    </div>
+                    <div class = delivery-request-label id="past-requests-label">Past Requests</div>
+                    <div class = "dashboard-box" id="past-request1"> 
+                        <div>Request for Triple O's</div><n/>
+                        <div>Delivery Location: MacLeod 431</div><n/>
+                        <div>Incentive $4.00</div><n/>
+                        <div class ="requester-rating" id="past-request-rating1">
+                            <div id="fulfiller-name">Fulfilled By: Jim Lee</div><n/>
+                            <img src="images/stars.png" id="fulfiller-rating-pic">
+                        </div>
+                    </div>
+                    <div class = "dashboard-box" id="past-request2"> 
+                        <div>Request for Mercante</div><n/>
+                        <div>Delivery Location: MacLeod 431</div><n/>
+                        <div>Incentive $3.00</div><n/>
+                        <div class ="requester-rating" id="past-request-rating2">
+                            <div id="fulfiller-name2">Fulfilled By: Kathy Park</div><n/>
+                            <img src="images/stars.png" id="fulfiller-rating2-pic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "screen">
+                <div id = "my-request-wrapper">
+                    <button class = "blue-button" id="back-myrequest-btn"> ← </button>
+                    <div class ="delivery-request-label">Restaurant: McDonalds</div>
+                    <div class ="delivery-request-label">Order: - Big Mac</div><n/>
+                    <div class ="delivery-request-label" id = "tab-div">- Large coke </div>
+                    <div class="requester-profile">
+                        <div class ="delivery-request-label" id = "courier-label">Courier:</div>
+                        <img src="images/profile.png" id="profile-pic4">
+                        <div class ="delivery-request-label" id = "my-requester-name">Emma Johnson</div>
+                        <img src="images/stars.png" id="courier-stars-pic">
+                        <div id="courier-num-reviews"> (10) </div>
+                    </div><br>
+                    <img src="images/mcdonalds-map.PNG" id="map-pic">
+                    <div class ="delivery-request-label">Confirmation Code: 3542</div>
+                    <button class = "blue-button" id="view-receipt-btn" > View Receipt</button>
+                </div>
+            </div>
+            <div class = "screen">
+                <div id = "my-deliveries-wrapper">
+                    <button class = "blue-button" id="back-mydeliveries-btn"> ← </button>
+                    <div class ="delivery-request-label">Restaurant: McDonalds</div>
+                    <div class ="delivery-request-label">Order: - Big Mac</div><n/>
+                    <div class ="delivery-request-label" id = "tab-div">- Large coke </div>
+                    <div class="requester-profile">
+                        <div class ="delivery-request-label" id = "courier-label">Requester:</div>
+                        <img src="images/profile.png" id="profile-pic5">
+                        <div class ="delivery-request-label" id = "my-requester-name">Emma Johnson</div>
+                        <img src="images/stars.png" id="courier-stars-pic">
+                        <div id="courier-num-reviews"> (10) </div>
+                    </div><br>
+                    <div class ="delivery-request-label">Location: MacLeod 431</div><br>
+                    <img src="images/mcdonalds-map.PNG" id="map-pic">
+                    <button class = "blue-button" id="upload-receipt-btn" > Upload Receipt</button>
+                </div>
+            </div>
+            <div class = "screen">
+                <div id = "upload-receipt-wrapper">
+                    <button class = "blue-button" id="back-uploadreceipt-btn"> ← </button>
+                    <img src="images/receipt.png" id="receipt-pic">
+                    <button class = "circle-button" id="camera-btn" > 📷</button>
+                </div>
+            </div>
+            <div class = "screen">
+                <div id = "my-deliveries2-wrapper">
+                    <button class = "blue-button" id="back-mydeliveries2-btn"> ← </button>
+                    <div class ="delivery-request-label">Restaurant: McDonalds</div>
+                    <div class ="delivery-request-label">Order: - Big Mac</div><n/>
+                    <div class ="delivery-request-label" id = "tab-div">- Large coke </div>
+                    <div class="requester-profile">
+                        <div class ="delivery-request-label" id = "courier-label">Requester:</div>
+                        <img src="images/profile.png" id="profile-pic5">
+                        <div class ="delivery-request-label" id = "my-requester-name">Emma Johnson</div>
+                        <img src="images/stars.png" id="courier-stars-pic">
+                        <div id="courier-num-reviews"> (10) </div>
+                    </div><br>
+                    <div class ="delivery-request-label">Location: MacLeod 431</div><br>
+                    <img src="images/mcdonalds-map.PNG" id="map-pic">
+                    <div class ="delivery-request-label">Receipt: Uploaded</div><n/>
+                    <button class = "blue-button" id="confirm-delivery-btn" > Confirm Delivery</button>
+                </div>
+            </div>
+            <div class = "screen">
+                <div id = "confirm-delivery-wrapper">
+                    <button class = "blue-button" id="back-confirm-btn"> ← </button>
+                    <div class ="delivery-request-label" id="bigger-text">Enter the requester's confirmation code: </div><br>
+                    <div class = "confirmation-code">
+                        <input type="number" class="con-num-box">
+                        <div class="hyphen-symbol"> - </div>
+                        <input type="number" class="con-num-box" >
+                        <div class="hyphen-symbol"> - </div>
+                        <input type="number" class="con-num-box">
+                        <div class="hyphen-symbol"> - </div>
+                        <input type="number" class="con-num-box">
+                    </div>
+                    <div class ="delivery-request-label" id="bigger-text">Enter the food cost:</div><br>
+                    <div class ="delivery-request-label" id="bigger-text2"> $<input type="number" id="conf-cost"> </div><br>
+                    <button class = "blue-button" id="complete-btn" >Complete</button>
+                </div>
+            </div>
+            <div class = "screen">
+                <div id = "accepted-deliveries-wrapper">
+                    <div class = delivery-request-label id="current-accepted-label">Current Deliveries</div>
+                    <div class = "dashboard-box" id="current-delivery">
+                        <img src="images/mcdonalds-map.PNG" id="accepted-map-pic"> 
+                        <div>Restaurant: McDonalds</div><n/>
+                        <div id="delivery-order1">Order: - Big Mac</div><n/>
+                        <div id="delivery-order2">- Large Coke</div><n/>
+                        <div>Deliver To: MacLeod 431</div><n/>
+                        <div class ="requester-rating" id="current-delivery-rating1">
+                            <div>Requester:</div><n/>
+                            <img src="images/profile.png" id="profile-pic3">
+                            <div id="accepted-requester-name">Bob Joe</div><n/>
+                            <img src="images/stars.png" id="accepted-delivery-stars-pic">
+                            <div id="accepted-num-reviews">(10)</div><n/>
+                        </div>
+                    </div>
+                    <div class = delivery-request-label id="past-accepted-label">Past Deliveries</div>
+                    <div class = "dashboard-box" id="past-delivery1"> 
+                        <div>Restaurant: Starbucks</div><n/>
+                        <div id="delivery-order1">Order: - Coffee</div><n/>
+                        <div id="delivery-order3">- Venti, Black</div><n/>
+                        <div>Deliver To: Kaiser 2020</div><n/>
+                        <div class ="requester-rating" id="current-delivery-rating1">
+                            <div>Requester:</div><n/>
+                            <img src="images/profile.png" id="profile-pic3">
+                            <div id="accepted-requester-name">Dave Ko</div><n/>
+                            <img src="images/stars.png" id="accepted-delivery-stars-pic">
+                            <div id="accepted-num-reviews">(23)</div><n/>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

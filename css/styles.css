@@ -76,7 +76,7 @@ hr {
 .user-pass-box {
     width: 300px;
     height: 50px;
-    margin-left: 20%;
+    margin-left: 0;
     border: 1px solid black;
 }
 #login-btn{
@@ -95,11 +95,31 @@ hr {
     visibility: hidden;
     z-index:4;
 }
+.tab-btn {
+    border: none;
+    background-color: #E8E8E8; 
+    font-size: 20px;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    margin-top:-20px;
+}
+#create-request {
+    padding-right: 12%;
+    padding-left: 35px;
+}
+#available-requests {
+    padding-left: 15%;
+    padding-right: 15px;
+}
 
 /* hamburger button */
 #menu-btn {
     float: left;
+    position: absolute;
     padding: 10px;
+    margin-left:-50%;
+    z-index:11;
 }
 .bar1, .bar2, .bar3 {
     width: 35px;
@@ -120,50 +140,828 @@ hr {
 
 /* menu */
 #menu-wrapper {
-    width: 250px;
-    height: 732px;
+    width: 280px;
+    height: 800px;
     background-color: #E8E8E8;
     font: 16px/24px Inconsolata, Arial, sans-serif;
     visibility: hidden;
     position: absolute;
     border: 1px solid black;
-    z-index: 4;
+    z-index: 10;
+    margin-top: -12%;
 }
 #menu-title {
     font-weight: bolder;
     font-size: 22px;
 }
 .menu-box {
-    width: 248px;
+    width: 250px;
     height: 20px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+}
+.menu-box > img,
+.menu-box > div {
+    display:inline-block;
+}
+#profile{
+    height:80px;
+}
+#profile-name{
+    margin-top: 0;
+    margin-left: 20%;
 }
 #profile-pic {
     width: 20px;
     height: 20px;
+    margin-right: 20%;
 }
-
+#profile-stars{
+    margin-top:2%;
+    margin-left:-10%;
+    width:80px;
+    height:20px; 
+}
+#profile-num-reviews{
+    margin-left:40%;
+    margin-top: -12%;
+}
 /* Dashboard */
 #dashboard-wrapper {
     font: 16px/24px Inconsolata, Arial, sans-serif;
     position: absolute;
     visibility: hidden;
-    z-index:3;
-    background-color: white;
+    z-index:5;
+    background-color: #E8E8E8;
+    height: 735px;
+    width: 500px;
+}
+.search-bar {
+    width: 420px;
+    height: 30px;
+    padding:0;
+    margin-left: 8%;
+    margin-top:3%;
+    border: 1px solid black;
+    background-color:white;
+}
+.search-bar > img,
+.search-bar > div {
+    display:inline-block;
+}
+.search-bar > div{
+    float:left;
+    margin-left: 4%;
+    margin-top: 1%;
+}
+#search-pic {
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin-right: 2%;
+    margin-top: 2px;
 }
 .dashboard-box {
     width: 400px;
     height: 210px;
-    margin: 2% 10%;
+    margin: 2% 8%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    background-color:white;
+}
+#cut-off {
+    width: 400px;
+    height: 178px;
+    margin: 2% 8%;
     text-align: center;
     padding: 10px;
     border: 1px solid black;
 }
-#restuarant-pic{
+#restuarant-pic {
     width: 390px;
     height: 170px;
+    z-index: 3;
 }
+
+/* Delivery Request */
+#delivery-request-wrapper{
+    position: absolute;
+    font: 16px/24px Inconsolata, Arial, sans-serif;
+    visibility: hidden;
+    z-index:12;
+    background-color:white;
+    height: 735px;
+    width: 500px;
+}
+#X-delivery-btn{
+    margin-top: -13%;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top:3%;
+    padding-bottom:3%;
+    padding-left: 4%;
+    padding-right:4%;
+    color: black;
+    background-color: #E8E8E8;
+    border: 1px solid black;
+}
+.delivery-request-label{
+    font: 30px;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+#tab-div {
+    margin-top: -1%;
+    margin-left: 21%;
+}
+#map-pic {
+    width: 300px;
+    height: 200px;
+    margin-left: 19%;
+}
+#requester-profile > img,
+#requester-profile > #requester-name {
+    display:inline-block;
+}
+#requester-name {
+    float:left;
+    margin-left: 11%;
+}
+#profile-pic2{
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-top: 5%;
+    margin-right:42%;
+}
+#requester-rating > img,
+#requester-rating > #num-reviews {
+    display:inline-block;
+}
+#stars-pic{
+    float:left;
+    margin-top: 10%;
+    margin-left: -23%;
+    width:80px;
+    height:20px; 
+}
+#num-reviews{
+    float:right;
+    font: 20px;
+    margin-top:0;
+    margin-right: 35%;
+}
+#accept-request-btn{
+    margin-left: 70%;
+    margin-top:20%;
+    font-size: 25px;
+}
+
+/* New Request */
+#new-request-wrapper {
+    position: absolute;
+    font: 16px/24px Inconsolata, Arial, sans-serif;
+    visibility: hidden;
+    z-index:4;
+    background-color: #E8E8E8;
+    height: 735px;
+    width: 500px;
+}
+
+.new-request-label {
+    font-weight: bolder;
+    font-size: 22px;
+    padding: 10px;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+#restaurant > #restaurant-label,
+#restaurant > #restaurant-box {
+    display: inline-block;
+}
+#restaurant-label {
+    float: left;
+}
+#restaurant-box {
+    width: 300px;
+    height: 30px;
+    padding:0;
+    margin-top:11%;
+    margin-right: 4%;
+    border: 1px solid black;
+    float: right;
+    background-color:white;
+}
+#restaurant-box > img,
+#restaurant-box > div {
+    display:inline-block;
+}
+#restaurant-box > div{
+    float:left;
+    margin-left: 2%;
+}
+#order > #order-label,
+#order > #order-box,
+#order > .circle-button {
+    display: inline-block;
+}
+#order-label {
+    float: left;
+    margin-top: 27%;
+    margin-left: -28%;
+}
+#order-box {
+    width: 300px;
+    height: 30px;
+    padding:0;
+    margin-top:9%;
+    margin-right: 15%;
+    border: 1px solid black;
+    float: right;
+    background-color: white;
+}
+#order-box > div{
+    float:left;
+    margin-left: 2%;
+}
+#add-item {
+    float:right;
+    margin-right: -70%;
+    margin-top:8%;
+}
+
+#location > #location-label,
+#location > #location-box {
+    display: inline-block;
+}
+#location-label {
+    float: left;
+    margin-top: 10%;
+    margin-left: -16%;
+}
+#location-box {
+    width: 300px;
+    height: 30px;
+    padding:0;
+    margin-top:10%;
+    margin-right: 4%;
+    border: 1px solid black;
+    float:right;
+    background-color:white;
+}
+#location-box > img,
+#location-box > div {
+    display:inline-block;
+}
+#location-box > div{
+    float:left;
+    margin-left: 2%;
+}
+#location-pic {
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+
+#cost > #cost-label,
+#cost > #cost-box {
+    display: inline-block;
+}
+#cost-label {
+    float: left;
+    margin-top: 10%;
+    margin-left: -24%;
+}
+#cost-box {
+    width: 100px;
+    height: 30px;
+    padding:0;
+    margin-top:11%;
+    margin-right: 32%;
+    border: 1px solid black;
+    float:right;
+}
+
+#incentive > #incentive-label,
+#incentive > #add-dollar,
+#incentive > #sub-dollar,
+#incentive > #dollar-symbol,
+#incentive > #incentive-cost {
+    display: inline-block;
+}
+#incentive-label {
+    float: left;
+    margin-top: 25%;
+    margin-left: -40%;
+}
+#add-dollar {
+    margin-top: 60%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#sub-dollar {
+    float:right;
+    margin-top: 9%;
+    margin-right: 15%;
+    padding-left:8px;
+    padding-right: 8px;
+}
+#dollar-symbol {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top:30%;
+}
+#incentive-cost{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#notes > #notes-label,
+#notes > #notes-box {
+    display: inline-block;
+}
+#notes-label {
+    float: left;
+    margin-top: 10%;
+    margin-left: -24%;
+}
+#notes-box {
+    width: 350px;
+    height: 100px;
+    padding:0;
+    margin-top:11%;
+    margin-right: 4%;
+    border: 1px solid black;
+    float:right;
+}
+
+#create-cancel > #cancel-request-btn,
+#create-cancel > #create-request-btn {
+    display: inline-block;
+}
+#cancel-request-btn {
+    float: left;
+    margin-top:10%;
+    margin-left:30%;
+    padding:10px;
+    background-color: red;
+}
+#create-request-btn {
+    float:right;
+    margin-top:10%;
+    margin-right: 30%;
+    padding:10px;
+}
+
+/* Add Credit */
+#add-credit-wrapper{
+    position: absolute;
+    font: 16px/24px Inconsolata, Arial, sans-serif;
+    visibility: hidden;
+    background-color:white;
+    height: 735px;
+    width: 500px;
+}
+.set-box-btns > .blue-button {
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.set-box-btns {
+    margin-left: 18%;
+}
+.custom-amount > div {
+    display: inline-block;
+}
+#custom-amount-label{
+    float: left;
+    margin-top: 5%;
+    margin-left: 18%;
+}
+#custom-amount-box {
+    width: 100px;
+    height: 20px;
+    padding:0;
+    margin-top:5%;
+    margin-right: 26%;
+    border: 1px solid black;
+    float:right;
+}
+#enter-payment-info-label{
+    margin-top:30%;
+}
+#cardholder-name-label{
+    margin-top: 5%;
+    margin-left: 18%;
+}
+#cardholder-name-box{
+    width: 300px;
+    height: 20px;
+    margin-left: 18%;
+    border: 1px solid black;
+}
+#card-number-label{
+    margin-top:5%;
+    margin-left: 18%;
+}
+#card-number-box{
+    width: 300px;
+    height: 20px;
+    margin-left: 18%;
+    border: 1px solid black;
+}
+
+.expiry-date > div {
+    display: inline-block;
+}
+.expiry-date{
+    margin-left:18%;
+}
+.ex-date-box{
+    width: 40px;
+    height: 20px;
+    border: 1px solid black;
+}
+.slash-symbol{
+    margin:0;
+    font-size: 25px;
+}
+#ccv{
+    margin-left: 5%;
+}
+.expiry-labels > div {
+    display: inline-block;
+}
+.expiry-labels {
+    margin-left:19%;
+}
+#yy-label{
+    margin-left: 8%;
+}
+#ccv-label{
+    margin-left: 8%;
+}
+#add-payment-info-btn{
+    margin-left: 70%;
+    font-size: 30px;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 10%;
+}
+
+/* My Created Requests */
+#created-requests-wrapper {
+    position: absolute;
+    font: 16px/24px Inconsolata, Arial, sans-serif;
+    visibility: hidden;
+    background-color:white;
+    height: 735px;
+    width: 500px;
+}
+#past-request-rating1 > div,
+#past-request-rating1 > img {
+    display: inline-block;
+}
+#fulfiller-name {
+    position: absolute;
+    float: left;
+    margin-left: -23%;
+}
+#fulfiller-rating-pic {
+    position: absolute;
+    width:80px;
+    height:20px; 
+    margin-left: 8%;
+}
+
+#past-request-rating2 > div,
+#past-request-rating2 > img {
+    display: inline-block;
+}
+#fulfiller-name2 {
+    position: absolute;
+    float: left;
+    margin-left: -25%;
+}
+#fulfiller-rating2-pic {
+    position: absolute;
+    width:80px;
+    height:20px; 
+    margin-left: 9%;
+}
+
+#past-request2 {
+    height: 124px;
+}
+
+/* My Deliveries */
+#accepted-deliveries-wrapper {
+    position: absolute;
+    font: 16px/24px Inconsolata, Arial, sans-serif;
+    visibility: hidden;
+    background-color:white;
+    height: 735px;
+    width: 500px;
+}
+
+#accepted-map-pic{
+    width: 300px;
+    height: 200px;
+    margin-left: 6%;
+}
+#current-delivery {
+    width: 400px;
+    height: 380px; 
+}
+#delivery-order1 {
+    margin-left: -12%;
+}
+#delivery-order2 {
+    margin-left: 7%;
+}
+#current-delivery-rating1 > img,
+#current-delivery-rating1 > div {
+    display:inline-block;
+}
+#profile-pic3{
+    width: 20px;
+    height: 20px;
+    margin-right: 20%;
+}
+#accepted-requester-name{
+    margin-left:20%;
+    margin-top:-6%;
+}
+#accepted-delivery-stars-pic{
+    margin-left: 13%;
+    width:80px;
+    height:20px; 
+}
+#accepted-num-reviews{
+    margin-left: 42%;
+    margin-top: -7%;
+    font-size: 15px;
+}
+#past-delivery1{
+    width: 400px;
+    height: 180px; 
+}
+#delivery-order3{
+    margin-left: 10%;
+}
+
+/* My Request */
+#my-request-wrapper{
+    position: absolute;
+    font: 16px/24px Inconsolata, Arial, sans-serif;
+    visibility: hidden;
+    z-index:12;
+    background-color:white;
+    height: 735px;
+    width: 500px;
+}
+#back-myrequest-btn{
+    margin-top: -13%;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top:3%;
+    padding-bottom:3%;
+    padding-left: 4%;
+    padding-right:4%;
+    color: black;
+    background-color: #E8E8E8;
+    border: 1px solid black;
+}
+#profile-pic4{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 25%;
+    margin-top: -5%;
+}
+#my-requester-name{
+    margin-left:31%;
+    margin-top:-5%;
+}
+#courier-stars-pic{
+    position: absolute;
+    margin-top:-5%;
+    margin-left:58%;
+    width:80px;
+    height:20px; 
+}
+#courier-num-reviews{
+    position: absolute;
+    margin-left: 76%;
+    margin-top: -5%;
+}
+#view-receipt-btn{
+    position: absolute;
+    margin-left: 30%;
+    margin-top:10%;
+    font-size:30px;
+}
+
+/* My Delivery*/ 
+#my-deliveries-wrapper{
+    position: absolute;
+    font: 16px/24px Inconsolata, Arial, sans-serif;
+    visibility: hidden;
+    z-index:12;
+    background-color:white;
+    height: 735px;
+    width: 500px;
+}
+#back-mydeliveries-btn{
+    margin-top: -13%;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top:3%;
+    padding-bottom:3%;
+    padding-left: 4%;
+    padding-right:4%;
+    color: black;
+    background-color: #E8E8E8;
+    border: 1px solid black;
+}
+#profile-pic5{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 27%;
+    margin-top: -5%;
+}
+#upload-receipt-btn{
+    position: absolute;
+    margin-left: -50%;
+    margin-top:60%;
+    padding-left: 10px;
+    padding-right:10px;
+    font-size:30px;
+}
+
+/* Upload Receipt */
+#upload-receipt-wrapper{
+    position: absolute;
+    font: 16px/24px Inconsolata, Arial, sans-serif;
+    visibility: hidden;
+    z-index:12;
+    background-color:white;
+    height: 735px;
+    width: 500px;
+}
+#back-uploadreceipt-btn{
+    margin-top: -13%;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top:3%;
+    padding-bottom:3%;
+    padding-left: 4%;
+    padding-right:4%;
+    color: black;
+    background-color: #E8E8E8;
+    border: 1px solid black; 
+}
+#receipt-pic{
+    width: 300px;
+    height: 500px;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+#camera-btn{
+    position: absolute;
+    background-color:white;
+    border: 1px solid black;
+    font-size: 30px;
+    margin-top:120%;
+    margin-left: -35%;
+}
+
+
+/*My delivery 2 */
+#my-deliveries2-wrapper{
+    position: absolute;
+    font: 16px/24px Inconsolata, Arial, sans-serif;
+    visibility: hidden;
+    z-index:12;
+    background-color:white;
+    height: 735px;
+    width: 500px;
+}
+#back-mydeliveries2-btn{
+    margin-top: -13%;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top:3%;
+    padding-bottom:3%;
+    padding-left: 4%;
+    padding-right:4%;
+    color: black;
+    background-color: #E8E8E8;
+    border: 1px solid black;
+}
+#confirm-delivery-btn{
+    position: absolute;
+    margin-left: 25%;
+    margin-top:15%;
+    padding-left: 10px;
+    padding-right:10px;
+    font-size:30px;
+}
+
+/*Confirm Delivery */
+#confirm-delivery-wrapper{
+    position: absolute;
+    font: 16px/24px Inconsolata, Arial, sans-serif;
+    visibility: hidden;
+    z-index:12;
+    background-color:white;
+    height: 735px;
+    width: 500px;
+}
+#back-confirm-btn{
+    margin-top: -13%;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top:3%;
+    padding-bottom:3%;
+    padding-left: 4%;
+    padding-right:4%;
+    color: black;
+    background-color: #E8E8E8;
+    border: 1px solid black; 
+}
+
+.confirmation-code > div {
+    display: inline-block;
+}
+.confirmation-code{
+    margin-left:18%;
+}
+.hyphen-symbol{
+    margin:0;
+    font-size: 25px;
+}
+#conf-cost{
+    width: 100px;
+    height: 30px;
+    padding:0;
+    margin-left: 1%;
+    border: 1px solid black;
+}
+#bigger-text{
+    margin-top:10%;
+    font-size:28px;
+}
+#bigger-text2{
+    margin-top:0;
+    margin-left: 20%;
+    font-size:28px;
+}
+#complete-btn{
+    position: absolute;
+    margin-left: 35%;
+    margin-top:55%;
+    padding-left: 10px;
+    padding-right:10px;
+    font-size:30px;
+}
+.con-num-box{
+    width: 50px;
+    height: 30px;
+    border: 1px solid black; 
+}
+/* #past-delivery1{
+    
+} */
+
+/* Delivery Response */
+/* #delivery-response-wrapper {
+    position: absolute;
+    font: 16px/24px Inconsolata, Arial, sans-serif;
+    visibility: hidden;
+    background-color:white;
+    height: 735px;
+    width: 500px;
+}
+#blackscreen {
+    position: absolute;
+    font: 16px/24px Inconsolata, Arial, sans-serif;
+    background-color:black;
+    height: 735px;
+    width: 500px;
+} */
 
 /* Blue Buttons */
 .blue-button {
@@ -178,4 +976,21 @@ hr {
 }
 .blue-button:active {
 	transform: translateY(4px);
-  }
+}
+.circle-button {
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(0, 160, 0);
+    color: white;
+    font: 15px Inconsolata, Arial, sans-serif;
+    padding: 10px;
+}
+.circle-button:active {
+	transform: translateY(4px);
+}
+/*only works in chrome and safari */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
