@@ -18,7 +18,7 @@ function hideScreens(){
     document.getElementById("delivery-request-wrapper").style.visibility = "hidden";
     document.getElementById("add-credit-wrapper").style.visibility = "hidden";
     document.getElementById("created-requests-wrapper").style.visibility = "hidden";
-    //document.getElementById("delivery-response-wrapper").style.visibility = "hidden";
+    document.getElementById("delivery-response-wrapper").style.visibility = "hidden";
     document.getElementById("accepted-deliveries-wrapper").style.visibility = "hidden";
     document.getElementById("my-request-wrapper").style.visibility = "hidden";
     document.getElementById("my-deliveries-wrapper").style.visibility = "hidden";
@@ -51,23 +51,31 @@ function createMainBanner(){
     available_requests.setAttribute("id", "available-requests");
     available_requests.setAttribute("class", "tab-btn");
     available_requests.innerHTML = "Available Requests";
-    available_requests.addEventListener('click', function(){
-        hideScreens();
-        document.getElementById("dashboard-wrapper").style.visibility = "visible";
-        create_request.style.border = "1px solid black";
-        available_requests.style.border = "none";
-    })
+    available_requests.style.backgroundColor = "white";
+    available_requests.style.border = "1px solid white";
 
     var create_request = document.createElement("button");
     create_request.setAttribute("id", "create-request");
     create_request.setAttribute("class", "tab-btn");
     create_request.innerHTML = "Create Request";
     create_request.style.border = "1px solid black";
+
+    available_requests.addEventListener('click', function(){
+        hideScreens();
+        document.getElementById("dashboard-wrapper").style.visibility = "visible";
+        create_request.style.border = "1px solid black";
+        available_requests.style.border = "1px solid white";
+        available_requests.style.backgroundColor = "white";
+        create_request.style.backgroundColor = "#E8E8E8";
+    })
     create_request.addEventListener('click', function(){
         hideScreens();
         document.getElementById("new-request-wrapper").style.visibility = "visible";
-        create_request.style.border = "none";
+        create_request.style.border = "1px solid white";
         available_requests.style.border = "1px solid black";
+        create_request.style.border = "1px solid white";
+        available_requests.style.backgroundColor = "#E8E8E8";
+        create_request.style.backgroundColor = "white";
     })
 
     document.getElementById("banner").append(available_requests);
@@ -107,13 +115,23 @@ window.onload = function () {
     })
 
     //create request button
-    // document.getElementById("create-request-btn").addEventListener('click', function(){
-    //     hideScreens();
-    //     clearBanner();
-    //     document.getElementById("delivery-response-wrapper").style.visibility = "visible";
-    //     document.getElementById("banner").style.visibility = "visible";
-    //     document.getElementById("banner-text").innerHTML = "Request Response";
-    // })
+    document.getElementById("create-request-btn").addEventListener('click', function(){
+        hideScreens();
+        clearBanner();
+        document.getElementById("delivery-response-wrapper").style.visibility = "visible";
+        document.getElementById("banner").style.visibility = "visible";
+        document.getElementById("banner").style.backgroundColor = "black";
+    })
+
+    //notification x button
+    document.getElementById("notif-x").addEventListener('click', function(){
+        document.getElementById("banner").style.backgroundColor="#E8E8E8";
+        hideScreens();
+        clearBanner();
+        document.getElementById("dashboard-wrapper").style.visibility = "visible";
+        document.getElementById("banner").style.visibility = "visible";
+        createMainBanner();
+    })
 
     //incentive counters
     document.getElementById("add-dollar").addEventListener('click', function(){

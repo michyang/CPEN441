@@ -7,66 +7,77 @@
     <body>
         <div id = "screen-wrapper">
             <div id = "banner">
-                    <button id="menu-btn"> 
-                        <div class="burger" onclick="animateMenu(this)">
-                            <div class="bar1"></div>
-                            <div class="bar2"></div>
-                            <div class="bar3"></div>
-                        </div>
-                    </button> 
-                    <h2 id="banner-text"></h2>
+                <button id="menu-btn"> 
+                    <div class="burger" onclick="animateMenu(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </button> 
+                <h2 id="banner-text"></h2>
             </div>
             <div class = login>
-                    <div id = "login-wrapper">
-                        <h2 id="login-title">UBC Food Buddies</h2>
-                        <div id="login-with">Login with</div>
-                        <button class = "blue-button" id="cwl-btn"> CWL</button>
-                    </div>
+                <div id = "login-wrapper">
+                    <h2 id="login-title">UBC Food Buddies</h2>
+                    <div id="login-with">Login with</div>
+                    <button class = "blue-button" id="cwl-btn"> CWL</button>
+                </div>
             </div>
             <div class = cwl-login>
-                    <div id = "login-cwl-wrapper">
-                        <h2 id="cwl-title">CWL Login</h2>
-                        <div class = "user-pass">Username</div>
-                        <input type="text" class = "user-pass-box" value="JohnSmith">
-                        <div class = "user-pass">Password</div>
-                        <input type="text" class = "user-pass-box" value="*******"><br>
-                        <button class = "blue-button" id="login-btn"> Login</button>
-                    </div>
+                <div id = "login-cwl-wrapper">
+                    <h2 id="cwl-title">CWL Login</h2>
+                    <div class = "user-pass">Username</div>
+                    <input type="text" class = "user-pass-box" value="JohnSmith">
+                    <div class = "user-pass">Password</div>
+                    <input type="text" class = "user-pass-box" value="*******"><br>
+                    <button class = "blue-button" id="login-btn"> Login</button>
+                </div>
             </div>
             <div class = menu>
-                    <div id = "menu-wrapper">
-                        <div class = "menu-box" id="profile"> 
-                            <div id="profile-name">John Smith</div> 
-                            <img src="images/profile.png" id="profile-pic"><n/>
-                            <img src="images/stars.png" id="profile-stars">
-                            <div id="profile-num-reviews"> (30) </div>
-                            <div id="account-credit"> Credit: $14.25</div>
-                        </div><hr/>
-                        <div class = "menu-box" id="menu-dashboard"> Dashboard </div><hr/>
-                        <div class = "menu-box" id="menu-add-credit"> Add Credit </div><hr/>
-                        <div class = "menu-box" id="menu-requests"> My Created Requests </div><hr/>
-                        <div class = "menu-box" id="menu-deliveries"> My Accepted Deliveries </div><hr/>
-                        <div class = "menu-box"> Logout </div><hr/>
-                    </div>
+                <div id = "menu-wrapper">
+                    <div class = "menu-box" id="profile"> 
+                        <div id="profile-name">John Smith</div> 
+                        <img src="images/profile.png" id="profile-pic"><n/>
+                        <img src="images/stars.png" id="profile-stars">
+                        <div id="profile-num-reviews"> (30) </div>
+                        <div id="account-credit"> Credit: $14.25</div>
+                    </div><hr/>
+                    <div class = "menu-box" id="menu-dashboard"> Dashboard </div><hr/>
+                    <div class = "menu-box" id="menu-add-credit"> Add Credit </div><hr/>
+                    <div class = "menu-box" id="menu-requests"> My Created Requests </div><hr/>
+                    <div class = "menu-box" id="menu-deliveries"> My Accepted Deliveries </div><hr/>
+                    <div class = "menu-box"> Logout </div><hr/>
+                </div>
             </div>
             <div class = "screen">
-                    <div id = "dashboard-wrapper">
-                        <div class = "search-bar">
-                            <div>Search Restaurants...  </div> 
-                            <img src="images/search.png" id="search-pic">
-                        </div>
-                        <div class = "dashboard-box" id="mcdonalds-request"> 
-                            <img src="images/mcdonalds.jpg" id="restuarant-pic"><hr/>
-                            McDonalds 
-                        </div>
-                        <div class = "dashboard-box" id="timhortons-request"> 
-                            <img src="images/tim-hortons.jpg" id="restuarant-pic"><hr/>
-                            Tim Hortons 
-                        </div>
-                        <div class = "dashboard-box" id = "cut-off"> 
-                            <img src="images/mercante.jpg" id="restuarant-pic"><hr/>
+                <div id = "dashboard-wrapper">
+                    <div class = "search-bar">
+                        <div>Search Restaurants...  </div> 
+                        <img src="images/search.png" id="search-pic">
+                    </div>
+                    <div class = "dashboard-box" id="mcdonalds-request"> 
+                        <img src="images/mcdonalds.jpg" id="restuarant-pic"><hr/>
+                        McDonalds <br/>
+                        Delivery Location: Macleod 431 <br/>
+                        Incentive: $4.00 <br/>
+                        For: James Trickington                  
+                        <div class ="requester-rating">
+                            <img src="images/stars.png" id="request-stars-pic">
+                            <div id="num-reviews2"> (10) </div>
                         </div>
                     </div>
+                    <div class = "dashboard-box" id="timhortons-request"> 
+                        <img src="images/tim-hortons.jpg" id="restuarant-pic"><hr/>
+                        Tim Hortons <br/>
+                        Delivery Location: Kaiser 2020 <br/>
+                        Incentive: $2.00 <br/>
+                        For: Naomi Santos                  
+                        <div class ="requester-rating">
+                            <img src="images/stars.png" id="request-stars2-pic">
+                            <div id="num-reviews3"> (69) </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class = "screen">
                     <div id = "delivery-request-wrapper">
@@ -76,9 +87,9 @@
                         <div class ="delivery-request-label">Order: - Big Mac</div><n/>
                         <div class ="delivery-request-label" id = "tab-div">- Large coke </div>
                         <div class ="delivery-request-label">Deliver To: MacLeod 431</div>
-                        <img src="images/mcdonalds-map.png" id="map-pic">
+                        <img src="images/mcdonalds-map.PNG" id="map-pic">
                         <div class="requester-profile">
-                            <div class ="delivery-request-label" id = "requester-name">Requester: Emma Johnson</div>
+                            <div class ="delivery-request-label" id = "requester-name">Requester: Emma Parker</div>
                             <img src="images/profile.png" id="profile-pic2">
                         </div>
                         <div class ="requester-rating">
@@ -132,11 +143,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class = "screen">
-                <div id = "delivery-response-wrapper">
-                    <div id="blackscreen"> </div>
-                </div>
-            </div> -->
             <div class = "screen">
                 <div id = "add-credit-wrapper">
                     <div class ="delivery-request-label">Current Credit: $14.25 </div>
@@ -180,12 +186,14 @@
                 <div id = "created-requests-wrapper">
                     <div class = delivery-request-label id="current-requests-label">Current Requests</div>
                     <div class = "dashboard-box" id="current-request"> 
+                        <br/>
                         <div>Request for McDonalds</div><n/>
                         <div>Delivery Location: MacLeod 431</div><n/>
                         <div>Incentive $4.00</div><n/>
                     </div>
                     <div class = delivery-request-label id="past-requests-label">Past Requests</div>
                     <div class = "dashboard-box" id="past-request1"> 
+                        <br/>
                         <div>Request for Triple O's</div><n/>
                         <div>Delivery Location: MacLeod 431</div><n/>
                         <div>Incentive $4.00</div><n/>
@@ -195,6 +203,7 @@
                         </div>
                     </div>
                     <div class = "dashboard-box" id="past-request2"> 
+                        <br/>
                         <div>Request for Mercante</div><n/>
                         <div>Delivery Location: MacLeod 431</div><n/>
                         <div>Incentive $3.00</div><n/>
@@ -218,6 +227,10 @@
                         <img src="images/stars.png" id="courier-stars-pic">
                         <div id="courier-num-reviews"> (10) </div>
                     </div><br>
+                    <div class="call-text-request">
+                        <img src="images/call.png" id="call-pic">
+                        <img src="images/message-text.png" id="text-pic">
+                    </div><br>
                     <img src="images/mcdonalds-map.PNG" id="map-pic">
                     <div class ="delivery-request-label">Confirmation Code: 3542</div>
                     <button class = "blue-button" id="view-receipt-btn" > View Receipt</button>
@@ -230,13 +243,17 @@
                     <div class ="delivery-request-label">Order: - Big Mac</div><n/>
                     <div class ="delivery-request-label" id = "tab-div">- Large coke </div>
                     <div class="requester-profile">
-                        <div class ="delivery-request-label" id = "courier-label">Requester:</div>
+                        <div class ="delivery-request-label" id = "courier-label">Requester: </div>
                         <img src="images/profile.png" id="profile-pic5">
-                        <div class ="delivery-request-label" id = "my-requester-name">Emma Johnson</div>
-                        <img src="images/stars.png" id="courier-stars-pic">
-                        <div id="courier-num-reviews"> (10) </div>
+                        <div class ="delivery-request-label" id = "my-requester-name2">Emma Johnson</div>
+                        <img src="images/stars.png" id="courier-stars2-pic">
+                        <div id="courier-num-reviews2"> (10) </div>
                     </div><br>
-                    <div class ="delivery-request-label">Location: MacLeod 431</div><br>
+                    <div class="call-text-request">
+                            <img src="images/call.png" id="call-pic">
+                            <img src="images/message-text.png" id="text-pic">
+                    </div><br>
+                    <div class ="delivery-request-label" id="delivery-location-label">Location: MacLeod 431</div><br>
                     <img src="images/mcdonalds-map.PNG" id="map-pic">
                     <button class = "blue-button" id="upload-receipt-btn" > Upload Receipt</button>
                 </div>
@@ -257,7 +274,7 @@
                     <div class="requester-profile">
                         <div class ="delivery-request-label" id = "courier-label">Requester:</div>
                         <img src="images/profile.png" id="profile-pic5">
-                        <div class ="delivery-request-label" id = "my-requester-name">Emma Johnson</div>
+                        <div class ="delivery-request-label" id = "my-requester-name3">Emma Johnson</div>
                         <img src="images/stars.png" id="courier-stars-pic">
                         <div id="courier-num-reviews"> (10) </div>
                     </div><br>
@@ -315,6 +332,27 @@
                             <img src="images/stars.png" id="accepted-delivery-stars-pic">
                             <div id="accepted-num-reviews">(23)</div><n/>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "screen">
+                <div id = "delivery-response-wrapper">
+                    <div id="blackscreen"> </div>
+                    <div id="notification">
+                        <b id="notification-title">UBC Food Buddies</b> <br/>
+                        <button id="notif-x">X</button>
+                        <div id="request-notification">
+                            <img src="images/profile.png" id="profile-pic6">
+                            <div id="accepted-requester-name-notification">Jim Jones wants to fulfill your request! </div><n/>
+                        </div><br/>
+                        <div id="request-notification">
+                            <img src="images/stars.png" id="notif-accepted-delivery-stars-pic">
+                            <div id="notif-accepted-num-reviews">(23)</div><n/>
+                        </div><br/>
+                        <div id="request-notification">
+                            <div id="accept">Accept</div>
+                            <div id="decline">Decline</div>
+                        </div><br/>
                     </div>
                 </div>
             </div>
