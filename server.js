@@ -4,7 +4,7 @@ var express = require('express');
 
 
 // Declare application parameters
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3000;
 var STATIC_ROOT = path.resolve(__dirname, './public');
 
 // Defining CORS middleware to enable CORS.
@@ -30,5 +30,6 @@ app.use('/', express.static(STATIC_ROOT));			// Serve STATIC_ROOT at URL "/" as 
 
 // Start listening on TCP port
 app.listen(PORT, function(){
-    console.log('Express.js server started, listening on PORT '+PORT);
+		console.log('Express.js server started, listening on PORT '+PORT);
+		console.log("Node app is running");
 });
