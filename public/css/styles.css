@@ -29,7 +29,7 @@ hr {
 /* Delivery Response */
 #delivery-response-wrapper {
     position: absolute;
-    font: 16px/24px Inconsolata, Arial, sans-serif;
+    font: 16px/24px Arial, sans-serif;
     visibility: hidden;
     background-color:white;
     height: 735px;
@@ -37,7 +37,7 @@ hr {
 }
 #blackscreen {
     position: absolute;
-    font: 16px/24px Inconsolata, Arial, sans-serif;
+    font: 16px/24px Arial, sans-serif;
     background-color:black;
     height: 780px;
     width: 500px;
@@ -112,7 +112,7 @@ hr {
     width: 500px;
     height: 700px;
     text-align: center;
-    font: 16px/24px Inconsolata, Arial, sans-serif;
+    font: 16px/24px Arial, sans-serif;
     position: absolute;
     background-color: white;
     z-index:1;
@@ -140,7 +140,7 @@ hr {
     width: 500px;
     height: 700px;
     text-align: center;
-    font: 16px/24px Inconsolata, Arial, sans-serif;
+    font: 16px/24px Arial, sans-serif;
     position: absolute;
     background-color: white;
     visibility: hidden;
@@ -176,7 +176,7 @@ hr {
     overflow: hidden;
     text-align: center;
     background-color: #E8E8E8;
-    font: 16px/24px Inconsolata, Arial, sans-serif;
+    font: 16px/24px Arial, sans-serif;
     width: 500px;
     visibility: hidden;
     z-index:4;
@@ -229,7 +229,7 @@ hr {
     width: 280px;
     height: 800px;
     background-color: #E8E8E8;
-    font: 16px/24px Inconsolata, Arial, sans-serif;
+    font: 16px/24px Arial, sans-serif;
     visibility: hidden;
     position: absolute;
     border: 1px solid black;
@@ -275,7 +275,7 @@ hr {
 
 /* Dashboard */
 #dashboard-wrapper {
-    font: 16px/24px Inconsolata, Arial, sans-serif;
+    font: 16px/24px Arial, sans-serif;
     position: absolute;
     visibility: hidden;
     z-index:5;
@@ -357,7 +357,7 @@ hr {
 /* Delivery Request */
 #delivery-request-wrapper{
     position: absolute;
-    font: 16px/24px Inconsolata, Arial, sans-serif;
+    font: 16px/24px Arial, sans-serif;
     visibility: hidden;
     z-index:12;
     background-color:white;
@@ -430,7 +430,7 @@ hr {
 /* New Request */
 #new-request-wrapper {
     position: absolute;
-    font: 16px/24px Inconsolata, Arial, sans-serif;
+    font: 16px/24px Arial, sans-serif;
     visibility: hidden;
     z-index:4;
     /* background-color: #E8E8E8; */
@@ -630,7 +630,7 @@ hr {
 /* Add Credit */
 #add-credit-wrapper{
     position: absolute;
-    font: 16px/24px Inconsolata, Arial, sans-serif;
+    font: 16px/24px Arial, sans-serif;
     visibility: hidden;
     background-color:white;
     height: 735px;
@@ -728,7 +728,7 @@ hr {
 /* My Created Requests */
 #created-requests-wrapper {
     position: absolute;
-    font: 16px/24px Inconsolata, Arial, sans-serif;
+    font: 16px/24px Arial, sans-serif;
     visibility: hidden;
     background-color:white;
     height: 735px;
@@ -798,7 +798,7 @@ hr {
 /* My Deliveries */
 #accepted-deliveries-wrapper {
     position: absolute;
-    font: 16px/24px Inconsolata, Arial, sans-serif;
+    font: 16px/24px Arial, sans-serif;
     visibility: hidden;
     background-color:white;
     height: 735px;
@@ -853,7 +853,7 @@ hr {
 /* My Request */
 #my-request-wrapper{
     position: absolute;
-    font: 16px/24px Inconsolata, Arial, sans-serif;
+    font: 16px/24px Arial, sans-serif;
     visibility: hidden;
     z-index:12;
     background-color:white;
@@ -924,7 +924,7 @@ hr {
 /* My Delivery*/ 
 #my-deliveries-wrapper{
     position: absolute;
-    font: 16px/24px Inconsolata, Arial, sans-serif;
+    font: 16px/24px Arial, sans-serif;
     visibility: hidden;
     z-index:12;
     background-color:white;
@@ -982,7 +982,7 @@ hr {
 /* Upload Receipt */
 #upload-receipt-wrapper{
     position: absolute;
-    font: 16px/24px Inconsolata, Arial, sans-serif;
+    font: 16px/24px Arial, sans-serif;
     visibility: hidden;
     z-index:12;
     background-color:white;
@@ -1021,7 +1021,7 @@ hr {
 /*My delivery 2 */
 #my-deliveries2-wrapper{
     position: absolute;
-    font: 16px/24px Inconsolata, Arial, sans-serif;
+    font: 16px/24px Arial, sans-serif;
     visibility: hidden;
     z-index:12;
     background-color:white;
@@ -1053,7 +1053,7 @@ hr {
 /*Confirm Delivery */
 #confirm-delivery-wrapper{
     position: absolute;
-    font: 16px/24px Inconsolata, Arial, sans-serif;
+    font: 16px/24px Arial, sans-serif;
     visibility: hidden;
     z-index:12;
     background-color:white;
@@ -1124,7 +1124,7 @@ hr {
     background-color: #4D94FF;
 	border: none;
 	color: #FFFFFF;
-	font: 18px Inconsolata, Arial;
+	font: 18px Arial;
 }
 .blue-button:hover {
 	background-color: #003D99;
@@ -1138,7 +1138,7 @@ hr {
     border: none;
     background-color: rgb(0, 160, 0);
     color: white;
-    font: 15px Inconsolata, Arial, sans-serif;
+    font: 15px Arial, sans-serif;
     padding: 10px;
 }
 .circle-button:active {
